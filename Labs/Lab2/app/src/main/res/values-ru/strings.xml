@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">Лабораторная2</string>
+    <string name="title" translatable="false">Лабораторная работа 2</string>
+    <string name="sendButtonText" translatable="false">Отправить</string>
+</resources>

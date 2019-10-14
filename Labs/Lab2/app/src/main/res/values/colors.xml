@@ -2,5 +2,7 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#09d8cd</color>
+    <color name="colorMessageEditText">#3726a9</color>
+    <color name="colorMessageTextView">#7d70d1</color>
 </resources>

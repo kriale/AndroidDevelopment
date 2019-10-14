@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab2</string>
-    <string name="title">Lab 2</string>
-    <string name="buttonOkText">OK</string>
+    <string name="app_name" translatable="false">Lab2</string>
+    <string name="title" translatable="false">Lab 2</string>
+    <string name="sendButtonText" translatable="false">Send</string>
 </resources>
