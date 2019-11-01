@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Лабораторная3</string>
+    <string name="title" translatable="false">Лабораторная работа 3</string>
+    <string name="sendButtonText" translatable="false">Отправить</string>
+</resources>
