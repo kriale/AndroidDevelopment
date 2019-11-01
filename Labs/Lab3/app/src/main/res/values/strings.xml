@@ -2,4 +2,10 @@
     <string name="app_name" translatable="false">Lab3</string>
     <string name="title" translatable="false">Lab 3</string>
     <string name="sendButtonText" translatable="false">Send</string>
+    <string name="exit">Exit</string>
+    <string name="welcome">Welcome!</string>
+    <string name="showWelcome">Show welcome</string>
+    <string name="exit_dialog_message">Are you sure?</string>
+    <string name="exit_dialog_ok">Yes</string>
+    <string name="exit_dialog_cancel">Cancel</string>
 </resources>

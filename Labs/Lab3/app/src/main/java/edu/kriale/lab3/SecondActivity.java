@@ -5,14 +5,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class SecondActivity extends FragmentActivity {
+public class SecondActivity extends MenuFragmentActivity {
     private static final String QUESTION_EXTRA_KEY = "question";
     private static final String ANSWER_EXTRA_KEY = "answer";
+    private static final String FINISH_EXTRA_KEY = "finish";
     private static final String EMPTY_TEXT = "";
 
     @Override
@@ -58,4 +63,16 @@ public class SecondActivity extends FragmentActivity {
         finish();
     }
 
+    @Override
+    protected void closeActivity() {
+        EditText AnswerEditText = findViewById( R.id.messageText );
+        String answer = AnswerEditText.getText().toString();
+
+        Intent answerIntent = new Intent();
+        answerIntent.putExtra( ANSWER_EXTRA_KEY, answer );
+        answerIntent.putExtra( FINISH_EXTRA_KEY, true );
+
+        setResult(Activity.RESULT_OK, answerIntent);
+        finish();
+    }
 }

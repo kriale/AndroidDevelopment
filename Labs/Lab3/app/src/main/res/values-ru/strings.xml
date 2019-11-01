@@ -3,4 +3,10 @@
     <string name="app_name" translatable="false">Лабораторная3</string>
     <string name="title" translatable="false">Лабораторная работа 3</string>
     <string name="sendButtonText" translatable="false">Отправить</string>
+    <string name="exit">Выход</string>
+    <string name="showWelcome">Показать приветствие</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="exit_dialog_message">Вы уверены?</string>
+    <string name="exit_dialog_ok">Так точно</string>
+    <string name="exit_dialog_cancel">Отмена</string>
 </resources>
