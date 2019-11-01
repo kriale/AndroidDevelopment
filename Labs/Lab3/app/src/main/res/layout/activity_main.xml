@@ -2,16 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="30dp">
-
-    <EditText
-        android:id="@+id/questionText"
-        style="@style/MessageEditText"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="" />
+    android:layout_margin="30dp"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/receivedAnswerText"
@@ -19,17 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
         android:text="" />
 
-    <Button
-        android:id="@+id/sendQuestionButton"
-        style="@style/SendButton"
-        android:layout_height="wrap_content"
+    <fragment
+        android:name="edu.kriale.lab3.MessageSendingFragment"
+        android:id="@+id/fragment_message_sending"
         android:layout_width="match_parent"
-        android:padding="20dp"
-        android:onClick="onClick_SendQuestion"
-        android:text="@string/sendButtonText" />
+        android:layout_height="0dp"
+        android:layout_weight="2" />
 
 </LinearLayout>

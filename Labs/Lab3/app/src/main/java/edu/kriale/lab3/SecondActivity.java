@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,7 +17,15 @@ public class SecondActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
+
         setContentView( R.layout.activity_second );
+
+//        final Button button = findViewById(R.id.sendMessageButton);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                sendAnswer();
+//            }
+//        });
     }
 
     @Override
@@ -34,7 +43,11 @@ public class SecondActivity extends Activity {
     }
 
     public void onClick_SendAnswer(View view) {
-        EditText AnswerEditText = findViewById( R.id.answerText );
+        sendAnswer();
+    }
+
+    private void sendAnswer() {
+        EditText AnswerEditText = findViewById( R.id.messageText );
         String answer = AnswerEditText.getText().toString();
 
         Intent answerIntent = new Intent();

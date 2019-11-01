@@ -16,16 +16,28 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
+
         setContentView( R.layout.activity_main );
+
+//        final Button button = findViewById(R.id.sendMessageButton);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                sendQuestion();
+//            }
+//        });
     }
 
-    public void onClick_SendQuestion(View view) {
-        EditText QuestionEditText = findViewById( R.id.questionText );
+    private void sendQuestion() {
+        EditText QuestionEditText = findViewById( R.id.messageText );
         String question = QuestionEditText.getText().toString();
 
         Intent questionIntent = new Intent( this, SecondActivity.class );
         questionIntent.putExtra( QUESTION_EXTRA_KEY, question );
         startActivityForResult( questionIntent, SEND_QUESTION_ACTION );
+    }
+
+    public void onClick_SendQuestion(View view) {
+        sendQuestion();
     }
 
     @Override
