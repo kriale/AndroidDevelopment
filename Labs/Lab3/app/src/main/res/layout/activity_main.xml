@@ -20,6 +20,6 @@
         android:id="@+id/fragment_message_sending"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2" />
+        android:layout_weight="2"/>
 
 </LinearLayout>
