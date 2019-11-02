@@ -1,12 +1,12 @@
 package edu.kriale.lab3;
 
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public abstract class MenuFragmentActivity extends FragmentActivity {
+public abstract class MenuFragmentActivity extends AppCompatActivity {
     private static final String EXIT_DIALOG_TAG = "exitDialog";
 
     @Override
