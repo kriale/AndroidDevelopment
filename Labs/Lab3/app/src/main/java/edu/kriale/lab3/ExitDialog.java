@@ -18,13 +18,13 @@ public class ExitDialog extends DialogFragment {
                 .setPositiveButton( R.string.exit_dialog_ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
+                        ((MenuFragmentActivity) getActivity()).closeActivity();
                     }
                 } )
                 .setNegativeButton( R.string.exit_dialog_cancel, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
+                        // nothing
                     }
                 } );
         return builder.create();

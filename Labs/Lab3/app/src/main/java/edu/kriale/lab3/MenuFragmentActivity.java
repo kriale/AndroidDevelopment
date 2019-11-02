@@ -22,16 +22,15 @@ public abstract class MenuFragmentActivity extends FragmentActivity {
             case R.id.showWelcome:
                 Toast.makeText( getApplicationContext(), R.string.welcome, Toast.LENGTH_LONG )
                         .show();
+                return true;
             case R.id.exit:
                 ExitDialog dialog = new ExitDialog();
                 dialog.show( this.getSupportFragmentManager(), EXIT_DIALOG_TAG );
-                closeActivity();
                 return true;
-
             default:
                 return super.onOptionsItemSelected( item );
         }
     }
 
-    protected abstract void closeActivity();
+    public abstract void closeActivity();
 }

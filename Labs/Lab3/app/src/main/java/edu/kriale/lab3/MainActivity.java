@@ -60,7 +60,7 @@ public class MainActivity extends MenuFragmentActivity {
     }
 
     @Override
-    protected void closeActivity() {
+    public void closeActivity() {
         finish();
     }
 }

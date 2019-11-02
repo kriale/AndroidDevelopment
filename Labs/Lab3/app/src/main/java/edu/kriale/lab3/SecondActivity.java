@@ -64,7 +64,7 @@ public class SecondActivity extends MenuFragmentActivity {
     }
 
     @Override
-    protected void closeActivity() {
+    public void closeActivity() {
         EditText AnswerEditText = findViewById( R.id.messageText );
         String answer = AnswerEditText.getText().toString();
 
