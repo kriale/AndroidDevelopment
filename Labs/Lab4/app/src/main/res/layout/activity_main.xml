@@ -37,20 +37,11 @@
         android:fillViewport="true">
 
         <TextView
-            android:id="@+id/TEXT_STATUS_ID"
+            android:id="@+id/primesTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             />
     </ScrollView>
-
-    <TextView
-        android:id="@+id/primesTextView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:textSize="20sp"
-        android:scrollbars="vertical"
-        android:text="" />
 
 </LinearLayout>
