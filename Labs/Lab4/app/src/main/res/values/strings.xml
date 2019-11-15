@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="findPrimes">FIND PRIMES</string>
+    <string name="number_is_empty_error_message">Please, input a natural number</string>
+</resources>
