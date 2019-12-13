@@ -1,4 +1,4 @@
-package edu.kriale.lab5.entities;
+package edu.kriale.lab5.entity;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Index;
 
-@Entity(tableName = "persons",
+@Entity(tableName = "person",
         indices = {@Index(value = {"first_name", "last_name"})})
 public class Person extends AbstractEntity {
     @ColumnInfo(name = "first_name")

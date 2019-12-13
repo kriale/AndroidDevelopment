@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lab5</string>
+    <string name="adding_new_person">Adding new person</string>
+    <string name="add_new_person">ADD</string>
+    <string name="searching_persons">Searching persons</string>
+    <string name="search_person">Search</string>
 </resources>

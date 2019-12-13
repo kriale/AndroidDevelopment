@@ -1,4 +1,4 @@
-package edu.kriale.lab5.entities;
+package edu.kriale.lab5.entity;
 
 import java.io.Serializable;
 import java.util.Objects;

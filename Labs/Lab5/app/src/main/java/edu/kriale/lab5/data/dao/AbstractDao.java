@@ -2,7 +2,7 @@ package edu.kriale.lab5.data.dao;
 
 import androidx.room.Dao;
 import androidx.room.RoomDatabase;
-import edu.kriale.lab5.entities.AbstractEntity;
+import edu.kriale.lab5.entity.AbstractEntity;
 
 @Dao
 abstract class AbstractDao<E extends AbstractEntity> {

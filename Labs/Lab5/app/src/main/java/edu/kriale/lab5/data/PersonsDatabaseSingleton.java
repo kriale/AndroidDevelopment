@@ -12,6 +12,6 @@ public class PersonsDatabaseSingleton {
     }
 
     private PersonsDatabaseSingleton() {
-        this.database = Room.
+
     }
 }
