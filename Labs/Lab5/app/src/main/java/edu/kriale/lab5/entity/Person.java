@@ -2,17 +2,19 @@ package edu.kriale.lab5.entity;
 
 import java.util.Date;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.Index;
 
-@Entity(tableName = "person",
-        indices = {@Index(value = {"first_name", "last_name"})})
+@Entity(tableName = "person")
 public class Person extends AbstractEntity {
     @ColumnInfo(name = "first_name")
     private String firstName;
 
     @ColumnInfo(name = "last_name")
+    @NonNull
     private String lastName;
 
     @ColumnInfo(name = "birth_date")
@@ -26,8 +28,9 @@ public class Person extends AbstractEntity {
         this.birthDate = birthDate;
     }
 
-    public Person(int id) {
-        super( id );
+    @Ignore
+    public Person() {
+        super( );
     }
 
     public String getFirstName() {
@@ -56,10 +59,8 @@ public class Person extends AbstractEntity {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", birthDate=" + birthDate +
-                '}';
+        return "Person " + (firstName.isEmpty() ? "" : firstName) +
+                " " + lastName +
+                ", " + birthDate;
     }
 }

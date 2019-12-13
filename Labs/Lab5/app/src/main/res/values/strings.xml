@@ -4,4 +4,5 @@
     <string name="add_new_person">ADD</string>
     <string name="searching_persons">Searching persons</string>
     <string name="search_person">Search</string>
+    <string name="invalid_birth_date_message">Invalid birth date</string>
 </resources>

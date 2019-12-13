@@ -1,6 +1,5 @@
 package edu.kriale.lab5.entity;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 import androidx.room.ColumnInfo;
@@ -10,13 +9,16 @@ import androidx.room.PrimaryKey;
 
 @Fts4
 @Entity
-public abstract class AbstractEntity implements Cloneable, Serializable {
-    @PrimaryKey
+public abstract class AbstractEntity {
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "rowid")
     private int id;
 
     AbstractEntity(int id) {
         this.id = id;
+    }
+
+    public AbstractEntity() {
     }
 
     public int getId() {
